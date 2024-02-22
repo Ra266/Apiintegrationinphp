@@ -1,0 +1,479 @@
+ERROR - 2024-02-06 10:46:04 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\ApiIntegration\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ApiIntegration\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ApiIntegration\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ApiIntegration\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ApiIntegration\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ApiIntegration\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ApiIntegration\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ApiIntegration\app\Controllers\Auth.php(15): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ApiIntegration\system\CodeIgniter.php(941): App\Controllers\Auth->index()
+#8 C:\xampp\htdocs\ApiIntegration\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp\htdocs\ApiIntegration\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ApiIntegration\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-06 10:46:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `apiintegration`
+ORDER BY `id`', [], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Auth.php(15): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-06 10:46:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `apiintegration`
+ORDER BY `id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `apiintegration`
+ORDER BY `id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `apiintegration`
+ORDER BY `id`', [], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Auth.php(15): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-06 10:46:05 --> [Caused by] mysqli_sql_exception: Unknown column 'id' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `apiintegration`
+ORDER BY `id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `apiintegration`
+ORDER BY `id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `apiintegration`
+ORDER BY `id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `apiintegration`
+ORDER BY `id`', [], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Auth.php(15): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-06 10:46:58 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\ApiIntegration\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ApiIntegration\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ApiIntegration\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ApiIntegration\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ApiIntegration\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ApiIntegration\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ApiIntegration\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ApiIntegration\app\Controllers\Auth.php(15): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ApiIntegration\system\CodeIgniter.php(941): App\Controllers\Auth->index()
+#8 C:\xampp\htdocs\ApiIntegration\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp\htdocs\ApiIntegration\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ApiIntegration\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-06 10:46:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `apiintegration`
+ORDER BY `id`', [], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Auth.php(15): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-06 10:46:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `apiintegration`
+ORDER BY `id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `apiintegration`
+ORDER BY `id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `apiintegration`
+ORDER BY `id`', [], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Auth.php(15): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-06 10:46:58 --> [Caused by] mysqli_sql_exception: Unknown column 'id' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `apiintegration`
+ORDER BY `id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `apiintegration`
+ORDER BY `id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `apiintegration`
+ORDER BY `id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `apiintegration`
+ORDER BY `id`', [], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Auth.php(15): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-06 10:49:54 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\ApiIntegration\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ApiIntegration\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ApiIntegration\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ApiIntegration\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ApiIntegration\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ApiIntegration\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ApiIntegration\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ApiIntegration\app\Controllers\Auth.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ApiIntegration\system\CodeIgniter.php(941): App\Controllers\Auth->index()
+#8 C:\xampp\htdocs\ApiIntegration\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp\htdocs\ApiIntegration\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ApiIntegration\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-06 10:49:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `apiintegration`
+ORDER BY `id`', [], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Auth.php(16): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-06 10:49:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `apiintegration`
+ORDER BY `id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `apiintegration`
+ORDER BY `id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `apiintegration`
+ORDER BY `id`', [], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Auth.php(16): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-06 10:49:54 --> [Caused by] mysqli_sql_exception: Unknown column 'id' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `apiintegration`
+ORDER BY `id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `apiintegration`
+ORDER BY `id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `apiintegration`
+ORDER BY `id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `apiintegration`
+ORDER BY `id`', [], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Auth.php(16): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-06 10:56:04 --> Error: Call to undefined method App\Controllers\Auth::respond()
+in APPPATH\Controllers\Auth.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-06 11:29:26 --> Error: Call to undefined function App\Controllers\json_validate()
+in APPPATH\Controllers\Auth.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->createuser()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-06 11:30:38 --> Error: Call to undefined function App\Controllers\json_validate()
+in APPPATH\Controllers\Auth.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->createuser()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-06 11:31:47 --> mysqli_sql_exception: Column 'user_name' cannot be null in C:\xampp\htdocs\ApiIntegration\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ApiIntegration\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ap...', 0)
+#1 C:\xampp\htdocs\ApiIntegration\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 C:\xampp\htdocs\ApiIntegration\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 C:\xampp\htdocs\ApiIntegration\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 C:\xampp\htdocs\ApiIntegration\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ApiIntegration\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ApiIntegration\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ApiIntegration\app\Controllers\Auth.php(34): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ApiIntegration\system\CodeIgniter.php(941): App\Controllers\Auth->createuser()
+#9 C:\xampp\htdocs\ApiIntegration\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\xampp\htdocs\ApiIntegration\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ApiIntegration\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-02-06 11:31:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'user_name' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `apiintegration` (`user_name`, `user_email`, `user_phone`) VALUES (:user_name:, :user_email:, :user_phone:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Auth.php(34): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->createuser()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-06 11:31:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'user_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `apiintegration` (`user_name`, `user_email`, `user_phone`) VALUES (NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `apiintegration` (`user_name`, `user_email`, `user_phone`) VALUES (NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `apiintegration` (`user_name`, `user_email`, `user_phone`) VALUES (:user_name:, :user_email:, :user_phone:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Auth.php(34): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->createuser()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-06 11:31:47 --> [Caused by] mysqli_sql_exception: Column 'user_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `apiintegration` (`user_name`, `user_email`, `user_phone`) VALUES (NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `apiintegration` (`user_name`, `user_email`, `user_phone`) VALUES (NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `apiintegration` (`user_name`, `user_email`, `user_phone`) VALUES (NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `apiintegration` (`user_name`, `user_email`, `user_phone`) VALUES (:user_name:, :user_email:, :user_phone:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Auth.php(34): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->createuser()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-06 11:32:51 --> mysqli_sql_exception: Column 'user_name' cannot be null in C:\xampp\htdocs\ApiIntegration\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ApiIntegration\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ap...', 0)
+#1 C:\xampp\htdocs\ApiIntegration\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 C:\xampp\htdocs\ApiIntegration\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 C:\xampp\htdocs\ApiIntegration\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 C:\xampp\htdocs\ApiIntegration\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ApiIntegration\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ApiIntegration\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ApiIntegration\app\Controllers\Auth.php(34): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ApiIntegration\system\CodeIgniter.php(941): App\Controllers\Auth->createuser()
+#9 C:\xampp\htdocs\ApiIntegration\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\xampp\htdocs\ApiIntegration\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ApiIntegration\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-02-06 11:32:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'user_name' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `apiintegration` (`user_name`, `user_email`, `user_phone`) VALUES (:user_name:, :user_email:, :user_phone:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Auth.php(34): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->createuser()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-06 11:32:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'user_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `apiintegration` (`user_name`, `user_email`, `user_phone`) VALUES (NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `apiintegration` (`user_name`, `user_email`, `user_phone`) VALUES (NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `apiintegration` (`user_name`, `user_email`, `user_phone`) VALUES (:user_name:, :user_email:, :user_phone:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Auth.php(34): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->createuser()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-06 11:32:51 --> [Caused by] mysqli_sql_exception: Column 'user_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `apiintegration` (`user_name`, `user_email`, `user_phone`) VALUES (NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `apiintegration` (`user_name`, `user_email`, `user_phone`) VALUES (NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `apiintegration` (`user_name`, `user_email`, `user_phone`) VALUES (NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `apiintegration` (`user_name`, `user_email`, `user_phone`) VALUES (:user_name:, :user_email:, :user_phone:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Auth.php(34): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->createuser()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-06 11:49:34 --> Error: Call to undefined function App\Controllers\respond()
+in APPPATH\Controllers\Auth.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->createuser()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-06 11:51:12 --> Error: Call to undefined function App\Controllers\respond()
+in APPPATH\Controllers\Auth.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->createuser()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-06 12:05:19 --> TypeError: json_decode(): Argument #1 ($json) must be of type string, array given
+in APPPATH\Controllers\Auth.php on line 28.
+ 1 APPPATH\Controllers\Auth.php(28): json_decode([...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->createuser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-06 12:08:16 --> TypeError: json_decode(): Argument #1 ($json) must be of type string, array given
+in APPPATH\Controllers\Auth.php on line 28.
+ 1 APPPATH\Controllers\Auth.php(28): json_decode([...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->createuser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-06 12:10:34 --> TypeError: json_decode(): Argument #1 ($json) must be of type string, array given
+in APPPATH\Controllers\Auth.php on line 31.
+ 1 APPPATH\Controllers\Auth.php(31): json_decode([...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->createuser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-06 12:11:15 --> ErrorException: Array to string conversion
+in APPPATH\Controllers\Auth.php on line 29.
+ 1 APPPATH\Controllers\Auth.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\ApiIntegration\\app\\Controllers\\Auth.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->createuser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-06 12:13:13 --> ErrorException: Array to string conversion
+in APPPATH\Controllers\Auth.php on line 29.
+ 1 APPPATH\Controllers\Auth.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\ApiIntegration\\app\\Controllers\\Auth.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->createuser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-06 12:15:46 --> TypeError: json_decode(): Argument #1 ($json) must be of type string, array given
+in APPPATH\Controllers\Auth.php on line 32.
+ 1 APPPATH\Controllers\Auth.php(32): json_decode([...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->createuser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-06 12:27:30 --> CodeIgniter\HTTP\Exceptions\HTTPException: Failed to parse JSON string. Error: Syntax error
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 588.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(588): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidJSON('Syntax error')
+ 2 APPPATH\Controllers\Auth.php(28): CodeIgniter\HTTP\IncomingRequest->getJSON(true)
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->createuser()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-06 12:33:30 --> CodeIgniter\HTTP\Exceptions\HTTPException: Failed to parse JSON string. Error: Syntax error
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 588.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(588): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidJSON('Syntax error')
+ 2 APPPATH\Controllers\Auth.php(28): CodeIgniter\HTTP\IncomingRequest->getJSON(true)
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->createuser()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-06 12:34:07 --> CodeIgniter\HTTP\Exceptions\HTTPException: Failed to parse JSON string. Error: Syntax error
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 588.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(588): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidJSON('Syntax error')
+ 2 APPPATH\Controllers\Auth.php(28): CodeIgniter\HTTP\IncomingRequest->getJSON(true)
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->createuser()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-06 12:34:21 --> TypeError: json_decode(): Argument #1 ($json) must be of type string, array given
+in APPPATH\Controllers\Auth.php on line 32.
+ 1 APPPATH\Controllers\Auth.php(32): json_decode([...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->createuser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-06 12:42:18 --> TypeError: CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1804.
+ 1 SYSTEMPATH\BaseModel.php(768): CodeIgniter\BaseModel->transformDataToArray('{
+  "user_name":"Abhay",
+  "user_email":"abhay@gmail.com",
+  "user_phone":"9876543210"
+}', 'insert')
+ 2 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert('{
+  "user_name":"Abhay",
+  "user_email":"abhay@gmail.com",
+  "user_phone":"9876543210"
+}', true)
+ 3 APPPATH\Controllers\Auth.php(36): CodeIgniter\Model->insert('{
+  "user_name":"Abhay",
+  "user_email":"abhay@gmail.com",
+  "user_phone":"9876543210"
+}')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->createuser()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-06 12:43:16 --> TypeError: CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1804.
+ 1 SYSTEMPATH\BaseModel.php(768): CodeIgniter\BaseModel->transformDataToArray('{
+  "user_name":"Abhay",
+  "user_email":"abhay@gmail.com",
+  "user_phone":"9876543210"
+}', 'insert')
+ 2 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert('{
+  "user_name":"Abhay",
+  "user_email":"abhay@gmail.com",
+  "user_phone":"9876543210"
+}', true)
+ 3 APPPATH\Controllers\Auth.php(36): CodeIgniter\Model->insert('{
+  "user_name":"Abhay",
+  "user_email":"abhay@gmail.com",
+  "user_phone":"9876543210"
+}')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->createuser()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-06 12:43:26 --> TypeError: CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1804.
+ 1 SYSTEMPATH\BaseModel.php(768): CodeIgniter\BaseModel->transformDataToArray('{
+  "user_name":"Abhay",
+  "user_email":"abhay@gmail.com",
+  "user_phone":"9876543210"
+}', 'insert')
+ 2 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert('{
+  "user_name":"Abhay",
+  "user_email":"abhay@gmail.com",
+  "user_phone":"9876543210"
+}', true)
+ 3 APPPATH\Controllers\Auth.php(36): CodeIgniter\Model->insert('{
+  "user_name":"Abhay",
+  "user_email":"abhay@gmail.com",
+  "user_phone":"9876543210"
+}')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->createuser()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-06 12:52:13 --> Error: Call to undefined function App\Controllers\respondCreated()
+in APPPATH\Controllers\Auth.php on line 37.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->createuser()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-06 13:17:44 --> Error: Call to undefined function App\Controllers\respondCreated()
+in APPPATH\Controllers\Auth.php on line 37.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->createuser()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
